@@ -1,0 +1,24 @@
+/* src/styles/MenuPage.css */
+.menu-page {
+    padding: 20px;
+}
+
+.menu-page ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-page .product-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-page button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}

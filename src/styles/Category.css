@@ -1,0 +1,31 @@
+/* CategoryGrid.css */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .category-item {
+    text-align: center;
+
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .category-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .category-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .category-name {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  

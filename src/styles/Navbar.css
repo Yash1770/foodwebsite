@@ -1,0 +1,162 @@
+/* src/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo img {
+    height: 40px;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+    position: relative;
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+.navbar-nav .nav-item a {
+    font-weight: bolder;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+    padding: 0.5rem;
+}
+
+.navbar-nav .nav-item a:hover {
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+    background-color: rgb(255, 47, 0);
+    border-radius: 3px;
+  
+    
+    /* border-radius: 20%;
+    border-bottom:  3px solid rgb(255, 106, 7); */
+
+ 
+}
+
+@media screen and (max-width: 830px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .navbar-logo {
+        margin-bottom: 10px; /* Space below logo */
+    }
+
+    .navbar-nav {
+        width: 100%; /* Full width */
+        justify-content: center; /* Center items */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 10px; /* Adjust margin */
+    }
+
+    .navbar-search {
+        display: block; /* Show search bar */
+        margin-top: 10px; /* Space above search bar */
+    }
+    .signin-button{
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+.navbar-search input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.navbar-search input[type="text"]:focus {
+    outline: none;
+    border-color: #555;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+}
+.search-button{
+    background-color: #ec8602;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+}
+.signin-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+.Logout-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid gray;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+.Logout-button:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+.signin-button:hover {
+    background-color: #42d012;
+    
+}
+.search-button:hover{
+    background-color: orange;
+
+}
+.cart{
+    margin-top: 7px;
+    height: 30px;
+    z-index: 0;
+}
+.navbar-actions .cart-count {
+    position: absolute;
+    top: 150;
+    right: 500;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+    font-size: 0.8em;
+}
+

@@ -1,0 +1,14 @@
+/* src/styles/ConfirmationPage.css */
+.confirmation-page {
+    padding: 20px;
+}
+
+.user-details, .order-summary {
+    margin-bottom: 20px;
+}
+
+.order-summary img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
